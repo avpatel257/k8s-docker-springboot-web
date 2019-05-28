@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RestAPIController {
     @GetMapping("/version")
     public ResponseEntity<Version> getVersion() {
-        return ResponseEntity.ok(new Version("2"));
+        return ResponseEntity.ok(new Version("1"));
     }
 
 }
