@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: demo-app-deployment
 spec:
-  replicas: 5
+  replicas: 2
   selector:
     matchLabels:
       app: demo-app
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: demo-app-container
-        image: avpatel257/k8s-docker-demo-web
+        image: avpatel257/k8s-docker-demo-web:bde8bab
         # resources:
         #   limits:
         #     memory: "512Mi"
@@ -41,7 +41,7 @@ spec:
     - targetPort: 8080
       port: 8080
       # valid nodePort range is 30000-32000. If you don't supply one, a random port will be picked and used as nodePort
-      #nodePort: 30481
+      nodePort: 30609
   selector:
     app: demo-app
     type: front-end

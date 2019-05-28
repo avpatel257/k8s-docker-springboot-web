@@ -20,7 +20,7 @@ docker build -t ${DOCKER_REPO}:${GIT_HASH} .
 docker tag ${DOCKER_REPO}:${GIT_HASH} ${DOCKER_REPO}:latest
 
 #Push image
-docker push ${DOCKER_REPO}
+docker push ${DOCKER_REPO}:${GIT_HASH}
 
 echo "\n\n\n\nPushed new image: ${DOCKER_REPO}:${GIT_HASH} successfully"
 
