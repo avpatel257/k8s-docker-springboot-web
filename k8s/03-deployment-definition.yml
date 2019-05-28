@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app-deployment
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: demo-app
+  template:
+    metadata:
+      labels:
+        app: demo-app
+    spec:
+      containers:
+      - name: demo-app-container
+        image: avpatel257/k8s-docker-demo-web
+        # resources:
+        #   limits:
+        #     memory: "512Mi"
+        #     cpu: "1"
+        ports:
+        - containerPort: 8080

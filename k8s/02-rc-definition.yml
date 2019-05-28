@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: demo-app-rc
+spec:
+  replicas: 5
+  selector:
+    app: demo-app-container
+  template:
+    metadata:
+      name: demo-app-container
+      labels:
+        app: demo-app-container
+    spec:
+      containers:
+        - name: demo-app-container
+          image: avpatel257/k8s-docker-demo-web
+          ports:
+            - containerPort: 8080
