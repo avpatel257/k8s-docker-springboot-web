@@ -1,14 +1,14 @@
 #!/bin/bash
 
 DOCKER_REPO="avpatel257/k8s-docker-demo-web"
-echo "Stopping running container if any..."
+printf "Stopping running container if any...\n"
 
 docker stop `docker ps | awk FNR==2{'print $1'}`
 
-echo "\n\n\n\nStarting container with latest image: ${DOCKER_REPO}"
+printf "\n\n\n\nStarting container with latest image: ${DOCKER_REPO}\n"
 
 docker run -d -p 8080:8080 avpatel257/k8s-docker-demo-web
 
-echo "Container started successfully..."
+printf "Container started successfully...\n"
 
 docker ps
