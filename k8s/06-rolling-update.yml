@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: demo-app-container
-        image: <YOUR-DOCKER-REPO>/<YOUR-DOCKER-IMAGE>:0777da7
+        image: <YOUR-DOCKER-REPO>/<YOUR-DOCKER-IMAGE>:<IMAGE-VERSION-2>
         # resources:
         #   limits:
         #     memory: "512Mi"

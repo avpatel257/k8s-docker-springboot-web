@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: demo-app-container
-        image: avpatel257/k8s-docker-demo-web:c141553
+        image: <YOUR-DOCKER-REPO>/<YOUR-DOCKER-IMAGE>:<IMAGE-VERSION-1>
         # resources:
         #   limits:
         #     memory: "512Mi"

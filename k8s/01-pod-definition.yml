@@ -11,6 +11,6 @@ metadata:
 spec:
   containers:
     - name: demo-app-container
-      image: avpatel257/k8s-docker-demo-web
+      image: <YOUR-DOCKER-REPO>/<YOUR-DOCKER-IMAGE>
       ports:
           - containerPort: 8080
