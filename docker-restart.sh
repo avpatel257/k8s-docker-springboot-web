@@ -12,3 +12,6 @@ docker run -d -p 8080:8080 avpatel257/k8s-docker-demo-web
 printf "Container started successfully...\n"
 
 docker ps
+
+printf "\nWeb: http://localhost:8080/login"
+printf "\nAPI: http://localhost:8080/api/users/version \n"

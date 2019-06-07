@@ -16,14 +16,14 @@ spec:
         version: 1.0.0
     spec:
       containers:
-        - name: demo-app-container
-          image: avpatel257/k8s-docker-demo-web:c141553
-          # resources:
-          #   limits:
-          #     memory: "512Mi"
-          #     cpu: "1"
-          ports:
-            - containerPort: 8080
+      - name: demo-app-container
+        image: avpatel257/k8s-docker-demo-web:0777da7
+        # resources:
+        #   limits:
+        #     memory: "512Mi"
+        #     cpu: "1"
+        ports:
+        - containerPort: 8080
 
   strategy:
     rollingUpdate:

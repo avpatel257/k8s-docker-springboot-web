@@ -1,0 +1,50 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: demo-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: demo-app
+      version: 1.0.0
+  template:
+    metadata:
+      labels:
+        app: demo-app
+        type: front-end
+        version: 1.0.0
+    spec:
+      containers:
+      - name: demo-app-container
+        image: avpatel257/k8s-docker-demo-web:c141553
+        # resources:
+        #   limits:
+        #     memory: "512Mi"
+        #     cpu: "1"
+        ports:
+        - containerPort: 8080
+
+  strategy:
+    rollingUpdate:
+      maxUnavailable: 0
+      maxSurge: 1
+
+---
+apiVersion: v1
+kind: Service
+
+metadata:
+  name: demo-service
+
+spec:
+  type: NodePort
+  ports:
+    - targetPort: 8080
+      port: 8080
+      # valid nodePort range is 30000-32767. If you don't supply one, a random port will be picked and used as nodePort
+      nodePort: 30609
+  selector:
+    app: demo-app
+    type: front-end
+    version: 1.0.0

@@ -6,8 +6,11 @@ metadata:
   labels:
       app: demo-app
       type: front-end
+      version: 1.0.0
 
 spec:
   containers:
     - name: demo-app-container
       image: avpatel257/k8s-docker-demo-web
+      ports:
+          - containerPort: 8080
