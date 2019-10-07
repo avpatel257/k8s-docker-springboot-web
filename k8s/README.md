@@ -1,8 +1,19 @@
 Installation Prerequisites
 ---
-You can use `katacoda` to launch a single node kubernetes cluster.
+- Clone this repo
+```
+git clone https://github.com/avpatel257/k8s-docker-springboot-web.git
 
-[Launch Single Node Kubernetes Cluster](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
+```
+
+```
+cd k8s-docker-springboot-web/k8s
+
+chmod +x setup.sh
+
+./setup.sh
+```
+
 
 Once your cluster is ready you can continue following instructions below.
 
@@ -34,7 +45,7 @@ Pods
     ```
 
 - Expected output:
-    - ![](images/01.png)
+    - ![](images/01.gif)
 
 
 
@@ -59,7 +70,7 @@ Replication Controllers
     ```
 
 - Expected output:
-    - ![](images/02.png)
+    - ![](images/02.gif)
 
 
 
@@ -85,14 +96,9 @@ Deployments
     ```
 
 - Expected output:
-    - ![](images/03.png)
+    - ![](images/03.gif)
 
 
-
-- Cleanup:
-    ```
-    kubectl delete -f 03-deployment-definition.yml
-    ```
 
 Service
 ---
@@ -111,13 +117,8 @@ Service
     ```
 
 - Expected output:
-    - ![](images/04.png)
+    - ![](images/04.gif)
 
-
-
-- Cleanup:
-    ```
-    kubectl delete -f 04-service-definition.yml
 
 NodePort Service
 ---
@@ -136,13 +137,9 @@ NodePort Service
     ```
 
 - Expected output:
-    - ![](images/05.png)
+    - ![](images/05.gif)
 
 
-
-- Cleanup:
-    ```
-    kubectl delete -f 05-nodeport-service-definition.yml
 
 Rolling Updates
 ---
@@ -161,13 +158,8 @@ Rolling Updates
     ```
 
 - Expected output:
-    - ![](images/06.png)
+    - ![](images/06.gif)
 
-
-
-- Cleanup:
-    ```
-    kubectl delete -f 06-rolling-update.yml
 
 Rollbacks
 ---
@@ -186,13 +178,8 @@ Rollbacks
     ```
 
 - Expected output:
-    - ![](images/07.png)
+    - ![](images/07.gif)
 
-
-
-- Cleanup:
-    ```
-    kubectl delete -f 07-rollback.yml
 
 Traffic Shift
 ---
@@ -211,10 +198,5 @@ Traffic Shift
     ```
 
 - Expected output:
-    - ![](images/08.png)
+    - ![](images/08.gif)
 
-
-
-- Cleanup:
-    ```
-    kubectl delete -f 08-traffic-shift.yml

@@ -3,16 +3,8 @@
 # Start minikube cluster
 minikube start --wait=false
 
-# 
+# Enable Kubernetes Dashboard
 minikube addons enable dashboard
 
-# 
+# Make the Kubernetes Dashboard available
 kubectl apply -f /opt/kubernetes-dashboard.yaml
-
-git clone https://github.com/avpatel257/k8s-docker-springboot-web.git
-
-cd k8s-docker-springboot-web
-
-git checkout witcon
-
-cd k8s
