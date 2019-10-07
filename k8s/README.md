@@ -1,3 +1,11 @@
+Installation Prerequisites
+---
+You can use `katacoda` to launch a single node kubernetes cluster.
+
+[Launch Single Node Kubernetes Cluster](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
+
+Once your cluster is ready you can continue following instructions below.
+
 Table Of Contents:
 * [Pods](#Pods)
 * [Replication Controllers](#Replication-Controllers)
