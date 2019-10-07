@@ -1,4 +1,5 @@
-### Excercise 1
+Excercise 1
+---
 - Apply
     ```
     kubectl apply -f 01-pod-definition.yml
@@ -14,7 +15,7 @@
     ```
 
 - Expected output:
-![](images/01.png)
+    - ![](images/01.png)
 
 
 
@@ -22,7 +23,8 @@
     ```
     kubectl delete -f 01-pod-definition.yml
     ```
-### Excercise 1
+Excercise 2
+---
 - Apply
     ```
     kubectl apply -f 02-rc-definition.yml
@@ -38,7 +40,7 @@
     ```
 
 - Expected output:
-![](images/02.png)
+    - ![](images/02.png)
 
 
 
