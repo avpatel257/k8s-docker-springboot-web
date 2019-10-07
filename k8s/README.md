@@ -31,6 +31,7 @@ Table Of Contents:
 * [Rolling Updates](#Rolling-Updates)
 * [Rollbacks](#Rollbacks)
 * [Traffic Shift](#Traffic-Shift)
+* [Commands](#Commands)
 
 
 Pods
@@ -205,3 +206,15 @@ Traffic Shift
 - Expected output:
     - ![](images/08.gif)
 
+Commands
+---
+Get IP of the minikube node
+
+```sh
+export INGRESS_HOST=`minikube ip`
+```
+
+Hit the service endpoint
+```sh
+while true; do curl $INGRESS_HOST:30609/api/users/version; echo ""; sleep .5; done    
+```
