@@ -1,5 +1,10 @@
 Installation Prerequisites
 ---
+[Open katacoda](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
+
+Perform following steps in `katakoda` terminal:
+
+
 - Clone this repo
 ```
 git clone https://github.com/avpatel257/k8s-docker-springboot-web.git
