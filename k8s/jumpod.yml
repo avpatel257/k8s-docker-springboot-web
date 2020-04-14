@@ -1,0 +1,17 @@
+# Lets you perform nslook/ping in the cluster. This pod is just to undersand the internal dns
+# kubectl exec -it jumpod nslookup 10.102.141.156
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: jumpod
+  namespace: default
+spec:
+  containers:
+  - name: busybox
+    image: busybox:1.28
+    command:
+      - sleep
+      - "3600"
+    imagePullPolicy: IfNotPresent
+  restartPolicy: Always
