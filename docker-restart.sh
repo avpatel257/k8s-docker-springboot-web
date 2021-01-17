@@ -15,3 +15,6 @@ docker ps
 
 printf "\nWeb: http://localhost:8080/login"
 printf "\nAPI: http://localhost:8080/api/users/version \n"
+
+
+sdfsfs
