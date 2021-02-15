@@ -5,7 +5,7 @@
     <artifactId>springboot-demo</artifactId>
     <name>springboot-demo</name>
     <description>springboot-demo</description>
-    <packaging>war</packaging>
+    <packaging>war</packaging> 
     <version>1.0.0</version>
     <parent>
         <groupId>org.springframework.boot</groupId>
