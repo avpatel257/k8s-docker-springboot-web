@@ -1,6 +1,8 @@
 Installation Prerequisites
 ---
-[Open katacoda](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)
+~[Open katacoda](https://www.katacoda.com/courses/kubernetes/launch-single-node-cluster)~
+
+[Killercoda](https://killercoda.com/playgrounds/scenario/kubernetes)
 
 Perform following steps in `katakoda` terminal:
 
